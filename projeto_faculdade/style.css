@@ -1,0 +1,218 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Estilos para o container principal */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 15px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: #007bff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    padding: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #007bff;
+}
+
+/* Estilos do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* Ajuste específico para as caixas de texto na tela de login */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container input {
+    width: 100%;
+    max-width: 400px; /* Ajusta a largura máxima */
+    margin-bottom: 15px; /* Ajusta a margem inferior */
+}
+
+.login-container .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Mensagens de erro */
+.alert {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Tela de login e cadastro */
+.login-container, .cadastro-container, .editar-cadastro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajusta o tamanho dos botões e campos */
+.login-container input, .cadastro-container input, .editar-cadastro-container input {
+    width: 100%;
+    max-width: 400px; /* Ajusta a largura máxima */
+    margin-bottom: 15px; /* Ajusta a margem inferior */
+}
+
+.login-container .form-control, .cadastro-container .form-control, .editar-cadastro-container .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Tela de Dashboard */
+.dashboard-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.dashboard-icons .icon-box {
+    text-align: center;
+    margin: 15px;
+    flex: 1 1 200px;
+}
+
+.dashboard-icons .icon-box i {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.dashboard-icons .icon-box a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.dashboard-icons .icon-box a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
